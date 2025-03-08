@@ -75,7 +75,7 @@ while True:
 
     if running and not restarting and git_pull_change("/root/"+MODS_PATH):
         print("Update detected, restarting!")
-        f = open(".srb2/luafiles/client/servercomms.txt", "w")
+        f = open("/root/.srb2/luafiles/client/servercomms.txt", "w")
         f.write("quit")
         f.close()
         restarting = True
